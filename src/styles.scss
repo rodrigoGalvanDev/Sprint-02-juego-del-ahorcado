@@ -7,13 +7,11 @@ $secondary-color: #E9ECF8;
     margin: 0;
 }
 
+
 body{
     background-color: $secondary-color;
 }
 
-.oculto{
-    display: none;
-}
 
 #logo{
     position: absolute;
@@ -24,7 +22,7 @@ body{
     border: 1px solid red;
 }
 
-.intro-game{
+#intro-game{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,13 +51,15 @@ body{
         color: $primary-color;
         font-family: 'Inter', sans-serif;
     }
+
 }
 
 
 
-.game{
+#add-word-game{
 
-    margin-top: 270px;
+    margin-top: 240px;
+    display: none;
 
     .text-area-game{
 
@@ -90,7 +90,7 @@ body{
     }
 
     .adversory{
-        margin-top: 20px;
+        margin-top: 50px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -152,4 +152,6 @@ body{
 
 
 }
+
+
 
