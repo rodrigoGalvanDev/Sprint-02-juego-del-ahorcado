@@ -7,14 +7,14 @@ const $game = document.querySelector("#game");
 const $newGameButton = document.querySelector("#new-game");
 const $inputGame = document.querySelector("#input-game");
 const $line = document.querySelector("#line");
-const $sucessLetters = document.querySelector("#sucess-letters");
+const $sucess = document.querySelector(".sucess");
 const $failLetters = document.querySelector("#fail-letters");
 const $gallow = document.querySelector("#gallow");
 const $wordGame = document.querySelector("#word-game");
 const $lines = document.querySelector(".lines");
 const $form = document.querySelector("form");
 
-const words = ["CASA", "PERRO", "SQL"];
+const words = ["CASA", "PERRO", "GATO", 'NEGRO'];
 
 let word = words[Math.floor(Math.random() * words.length)];
 
@@ -37,19 +37,32 @@ const setWord = () => {
   }
 };
 
+let counterAccert = 0;
+let saveCharac = [];
+
 const verifyLetter = (e) => {
   e.preventDefault();
 
-    let previewCharacter;
-  for (let i = 0; i < word.length; i++) {
-    if ($inputGame.value.toUpperCase() === word[i]) {
-      previewCharacter = $inputGame.value.toUpperCase()
-      const putWord = document.getElementById(`line${i}`);
-      const characters = document.createElement("p");
-      characters.id = `character${i}`;
-      characters.innerHTML = $inputGame.value.toUpperCase();
-      putWord.prepend(characters);
+  if (word.includes($inputGame.value.toUpperCase()) === true) {
+    if (saveCharac.includes($inputGame.value.toUpperCase()) === false) {
+      saveCharac.push($inputGame.value.toUpperCase());
+      saveCharac.join();
+
+      for (let i = 0; i < word.length; i++) {
+        if ($inputGame.value.toUpperCase() === word[i]) {
+          const putWord = document.getElementById(`line${i}`);
+          const characters = document.createElement("p");
+          characters.id = `character${i}`;
+          characters.innerHTML = $inputGame.value.toUpperCase();
+          putWord.prepend(characters);
+          counterAccert = counterAccert + 1;
+        }
+      }
     }
+  }
+
+  if (counterAccert === word.length) {
+    gameWin();
   }
 
   verifyError();
@@ -73,6 +86,17 @@ const verifyError = () => {
 
   drawGallow();
   $form.reset();
+};
+
+const gameWin = () => {
+  let h2 = document.createElement("h2");
+  h2.id = "game-win";
+  h2.innerText = `Felicidades, ganaste el juego`;
+
+  $game.prepend(h2);
+  $gallow.style.display = "none";
+  $wordGame.style.display = "none";
+  $cancellGameButton.style.display = "none";
 };
 
 const drawGallow = () => {
@@ -117,7 +141,7 @@ const drawGallow = () => {
 const gameOver = () => {
   let h2 = document.createElement("h2");
   h2.id = "game-over";
-  h2.innerText = `Perdiste el juego la palabra era ${word}`;
+  h2.innerText = `Perdiste el juego, la palabra era ${word}`;
 
   $game.prepend(h2);
   $gallow.style.display = "none";
@@ -151,12 +175,21 @@ const surrender = () => {
 
 const resetGame = () => {
   errorCharacters = [];
+  saveCharac = [];
   $failLetters.innerHTML = "";
-  if (counterErrors === 9) {
-    const deleteH2 = document.getElementById("game-over");
-    deleteH2.remove();
+
+  if (counterAccert === word.length) {
+    const deleteGameWin = document.getElementById("game-win");
+    deleteGameWin.remove();
   }
+
+  if (counterErrors === 9) {
+    const deleteGameOver = document.getElementById("game-over");
+    deleteGameOver.remove();
+  }
+
   counterErrors = 0;
+  counterAccert = 0;
 
   for (let i = 0; i < word.length; i++) {
     const deleteP = document.getElementById(`character${i}`);

@@ -19,7 +19,6 @@ body{
     top: 20px;
     width: 30px;
     height: 40px;
-    border: 1px solid red;
 }
 
 #intro-game{
@@ -28,7 +27,6 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 1px solid red;
     margin-top: 18rem;
 
     #start-game{
@@ -40,7 +38,13 @@ body{
         color: white;
         font-family: 'Inter', sans-serif;
         margin-bottom: 20px;
+        cursor: pointer;
+        transition: transform ease 300ms;
     }
+
+    #start-game:hover{
+        transform: translateY(-0.25em);
+      }
     
     #add-word{
         background-color: $secondary-color;
@@ -50,7 +54,13 @@ body{
         height: 50px;
         color: $primary-color;
         font-family: 'Inter', sans-serif;
+        cursor: pointer;
+        transition: transform ease 300ms;
     }
+
+    #add-word:hover{
+        transform: translateY(-0.25em);
+      }
 
 }
 
@@ -135,7 +145,12 @@ body{
             height: 50px;
             font-family: 'Inter';
             margin-right: 10px;
+            transition: transform ease 300ms;
         }
+        
+        #play-game:hover{
+            transform: translateY(-0.25em);
+          }
     
         #cancell-game{
             background-color: $secondary-color;
@@ -145,8 +160,12 @@ body{
             width: 250px;
             height: 50px;
             font-family: 'Inter';
-            
+            transition: transform ease 300ms;
         }
+
+        #cancell-game:hover{
+            transform: translateY(-0.25em);
+          }
     }
 
 }
@@ -237,7 +256,12 @@ body{
             height: 50px;
             font-family: 'Inter';
             margin-right: 10px;
+            transition: transform ease 300ms;
         }
+
+        #new-game:hover{
+            transform: translateY(-0.25em);
+          }
 
         #cancell-game{
             background-color: $secondary-color;
@@ -247,11 +271,26 @@ body{
             width: 250px;
             height: 50px;
             font-family: 'Inter';
+            transition: transform ease 300ms;
             
         }
+
+        #cancell-game:hover{
+            transform: translateY(-0.25em);
+          }
     }
 
     #game-over{
+        font-size: 40px;
+        font-family: 'Inter';
+        color: $primary-color;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+    }
+
+    #game-win{
         font-size: 40px;
         font-family: 'Inter';
         color: $primary-color;

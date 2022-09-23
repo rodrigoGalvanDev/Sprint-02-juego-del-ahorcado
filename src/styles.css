@@ -14,7 +14,6 @@ body {
   top: 20px;
   width: 30px;
   height: 40px;
-  border: 1px solid red;
 }
 
 #intro-game {
@@ -23,7 +22,6 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  border: 1px solid red;
   margin-top: 18rem;
 }
 #intro-game #start-game {
@@ -35,6 +33,11 @@ body {
   color: white;
   font-family: "Inter", sans-serif;
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform ease 300ms;
+}
+#intro-game #start-game:hover {
+  transform: translateY(-0.25em);
 }
 #intro-game #add-word {
   background-color: #E9ECF8;
@@ -44,6 +47,11 @@ body {
   height: 50px;
   color: #0A3871;
   font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: transform ease 300ms;
+}
+#intro-game #add-word:hover {
+  transform: translateY(-0.25em);
 }
 
 #add-word-game {
@@ -115,6 +123,10 @@ body {
   height: 50px;
   font-family: "Inter";
   margin-right: 10px;
+  transition: transform ease 300ms;
+}
+#add-word-game .buttons-addword-game #play-game:hover {
+  transform: translateY(-0.25em);
 }
 #add-word-game .buttons-addword-game #cancell-game {
   background-color: #E9ECF8;
@@ -124,6 +136,10 @@ body {
   width: 250px;
   height: 50px;
   font-family: "Inter";
+  transition: transform ease 300ms;
+}
+#add-word-game .buttons-addword-game #cancell-game:hover {
+  transform: translateY(-0.25em);
 }
 
 #game {
@@ -197,6 +213,10 @@ body {
   height: 50px;
   font-family: "Inter";
   margin-right: 10px;
+  transition: transform ease 300ms;
+}
+#game #buttons-game #new-game:hover {
+  transform: translateY(-0.25em);
 }
 #game #buttons-game #cancell-game {
   background-color: #E9ECF8;
@@ -206,8 +226,21 @@ body {
   width: 250px;
   height: 50px;
   font-family: "Inter";
+  transition: transform ease 300ms;
+}
+#game #buttons-game #cancell-game:hover {
+  transform: translateY(-0.25em);
 }
 #game #game-over {
+  font-size: 40px;
+  font-family: "Inter";
+  color: #0A3871;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+#game #game-win {
   font-size: 40px;
   font-family: "Inter";
   color: #0A3871;
