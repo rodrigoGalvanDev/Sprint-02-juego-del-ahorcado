@@ -127,7 +127,7 @@ body {
 }
 
 #game {
-  margin-top: 400px;
+  margin-top: 150px;
 }
 #game #gallow {
   display: flex;
@@ -206,4 +206,13 @@ body {
   width: 250px;
   height: 50px;
   font-family: "Inter";
+}
+#game #game-over {
+  font-size: 40px;
+  font-family: "Inter";
+  color: #0A3871;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
 }/*# sourceMappingURL=styles.css.map */
