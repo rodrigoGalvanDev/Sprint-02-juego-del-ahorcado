@@ -26,12 +26,13 @@ body {
 }
 #intro-game #start-game {
   background-color: #0A3871;
-  width: 250px;
-  height: 100px;
+  width: 315px;
+  height: 115px;
   border: 1px solid #0A3871;
   border-radius: 24px;
   color: white;
   font-family: "Inter", sans-serif;
+  font-size: 20px;
   margin-bottom: 20px;
   cursor: pointer;
   transition: transform ease 300ms;
@@ -43,10 +44,11 @@ body {
   background-color: #E9ECF8;
   border: 1px solid #0A3871;
   border-radius: 24px;
-  width: 200px;
-  height: 50px;
+  width: 280px;
+  height: 60px;
   color: #0A3871;
   font-family: "Inter", sans-serif;
+  font-size: 16px;
   cursor: pointer;
   transition: transform ease 300ms;
 }
@@ -255,4 +257,32 @@ body {
   justify-content: center;
   text-align: center;
   align-content: center;
+}
+
+.footer {
+  margin-top: 18rem;
+  text-align: center;
+}
+.footer .credits p {
+  color: #0A3871;
+  font-size: 25px;
+  font-family: "Inter";
+}
+.footer .contact {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid red;
+}
+.footer .contact a {
+  font-family: "Inter";
+  text-decoration: none;
+  color: #0A3871;
+  font-size: 25px;
+  padding-right: 15px;
+}
+.footer .contact a svg {
+  width: 50px;
+  height: 50px;
 }/*# sourceMappingURL=styles.css.map */

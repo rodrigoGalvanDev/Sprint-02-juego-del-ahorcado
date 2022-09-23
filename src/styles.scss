@@ -31,12 +31,13 @@ body{
 
     #start-game{
         background-color: $primary-color;
-        width: 250px;
-        height: 100px;
+        width: 315px;
+        height: 115px;
         border: 1px solid $primary-color;
         border-radius: 24px;
         color: white;
         font-family: 'Inter', sans-serif;
+        font-size: 20px;
         margin-bottom: 20px;
         cursor: pointer;
         transition: transform ease 300ms;
@@ -50,10 +51,11 @@ body{
         background-color: $secondary-color;
         border: 1px solid $primary-color;
         border-radius: 24px;
-        width: 200px;
-        height: 50px;
+        width: 280px;
+        height: 60px;
         color: $primary-color;
         font-family: 'Inter', sans-serif;
+        font-size: 16px;
         cursor: pointer;
         transition: transform ease 300ms;
     }
@@ -309,4 +311,40 @@ body{
 
 }
 
+.footer{
+    margin-top: 18rem;
+    text-align: center;
+    
+    .credits{
 
+        p{
+            color: $primary-color;
+            font-size: 25px;
+            font-family: 'Inter';
+        }
+
+    }
+
+    .contact{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border: 1px solid red;
+
+
+
+        a{
+            font-family: 'Inter';
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 25px;
+            padding-right: 15px;
+
+            svg{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
