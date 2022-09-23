@@ -127,6 +127,7 @@ body {
   font-size: 16px;
   margin-right: 10px;
   transition: transform ease 300ms;
+  cursor: pointer;
 }
 #add-word-game .buttons-addword-game #play-game-word:hover {
   transform: translateY(-0.25em);
@@ -141,6 +142,7 @@ body {
   font-size: 16px;
   font-family: "Inter";
   transition: transform ease 300ms;
+  cursor: pointer;
 }
 #add-word-game .buttons-addword-game #cancel-game:hover {
   transform: translateY(-0.25em);
@@ -226,6 +228,7 @@ body {
   font-size: 17px;
   margin-right: 10px;
   transition: transform ease 300ms;
+  cursor: pointer;
 }
 #game #buttons-game #new-game:hover {
   transform: translateY(-0.25em);
@@ -240,6 +243,7 @@ body {
   font-size: 17px;
   font-family: "Inter";
   transition: transform ease 300ms;
+  cursor: pointer;
 }
 #game #buttons-game #surrender-game:hover {
   transform: translateY(-0.25em);

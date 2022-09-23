@@ -149,6 +149,7 @@ body{
             font-size: 16px;
             margin-right: 10px;
             transition: transform ease 300ms;
+            cursor: pointer;
         }
         
         #play-game-word:hover{
@@ -165,6 +166,7 @@ body{
             font-size: 16px;
             font-family: 'Inter';
             transition: transform ease 300ms;
+            cursor: pointer;
         }
 
         #cancel-game:hover{
@@ -269,6 +271,7 @@ body{
             font-size: 17px;
             margin-right: 10px;
             transition: transform ease 300ms;
+            cursor: pointer;
         }
 
         #new-game:hover{
@@ -285,7 +288,7 @@ body{
             font-size: 17px;
             font-family: 'Inter';
             transition: transform ease 300ms;
-            
+            cursor: pointer;
         }
 
         #surrender-game:hover{
