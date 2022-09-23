@@ -158,12 +158,19 @@ body {
   width: 25px;
   text-transform: capitalize;
 }
-#game #word-game #sucess-letters {
-  font-family: "Inter", sans-serif;
+#game #word-game .lines {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+#game #word-game .lines p {
+  margin-bottom: -10px;
+  font-size: 40px;
   color: #0A3871;
-  font-size: 48px;
-  letter-spacing: 60px;
-  margin-left: 55px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
 }
 #game #word-game #fail-letters {
   opacity: 0.7;
