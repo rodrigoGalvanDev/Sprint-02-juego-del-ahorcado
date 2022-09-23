@@ -128,7 +128,7 @@ body {
 #add-word-game .buttons-addword-game #play-game-word:hover {
   transform: translateY(-0.25em);
 }
-#add-word-game .buttons-addword-game #cancell-game {
+#add-word-game .buttons-addword-game #cancel-game {
   background-color: #E9ECF8;
   color: #0A3871;
   border-radius: 20px;
@@ -138,8 +138,15 @@ body {
   font-family: "Inter";
   transition: transform ease 300ms;
 }
-#add-word-game .buttons-addword-game #cancell-game:hover {
+#add-word-game .buttons-addword-game #cancel-game:hover {
   transform: translateY(-0.25em);
+}
+#add-word-game .error-charac {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  color: red;
+  font-family: "Inter", sans-serif;
 }
 
 #game {
@@ -218,7 +225,7 @@ body {
 #game #buttons-game #new-game:hover {
   transform: translateY(-0.25em);
 }
-#game #buttons-game #cancell-game {
+#game #buttons-game #surrender-game {
   background-color: #E9ECF8;
   color: #0A3871;
   border-radius: 20px;
@@ -228,7 +235,7 @@ body {
   font-family: "Inter";
   transition: transform ease 300ms;
 }
-#game #buttons-game #cancell-game:hover {
+#game #buttons-game #surrender-game:hover {
   transform: translateY(-0.25em);
 }
 #game #game-over {

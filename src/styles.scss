@@ -152,7 +152,7 @@ body{
             transform: translateY(-0.25em);
           }
     
-        #cancell-game{
+        #cancel-game{
             background-color: $secondary-color;
             color: $primary-color;
             border-radius: 20px;
@@ -163,9 +163,16 @@ body{
             transition: transform ease 300ms;
         }
 
-        #cancell-game:hover{
+        #cancel-game:hover{
             transform: translateY(-0.25em);
           }
+    }
+    .error-charac{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+        color: red;
+        font-family: 'Inter', sans-serif;
     }
 
 }
@@ -263,7 +270,7 @@ body{
             transform: translateY(-0.25em);
           }
 
-        #cancell-game{
+        #surrender-game{
             background-color: $secondary-color;
             color: $primary-color;
             border-radius: 20px;
@@ -275,7 +282,7 @@ body{
             
         }
 
-        #cancell-game:hover{
+        #surrender-game:hover{
             transform: translateY(-0.25em);
           }
     }

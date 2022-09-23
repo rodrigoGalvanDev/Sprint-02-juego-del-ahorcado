@@ -5,7 +5,8 @@ const $addWordGame = document.querySelector("#add-word-game");
 const $playGameWord = document.querySelector('#play-game-word')
 const $textInputWord = document.querySelector('#textInput')
 const $errorCharac = document.querySelector('.error-charac')
-const $cancellGameButton = document.querySelector("#cancell-game");
+const $surrenderButton = document.querySelector('#surrender-game')
+const $cancelGameButton = document.querySelector("#cancel-game");
 const $game = document.querySelector("#game");
 const $newGameButton = document.querySelector("#new-game");
 const $inputGame = document.querySelector("#input-game");
@@ -65,7 +66,9 @@ const verifyLetter = (e) => {
   }
 
   if (counterAccert === word.length) {
-    gameWin();
+    setTimeout(() => {
+      gameWin();
+    }, 700);
   }
 
   verifyError();
@@ -84,7 +87,9 @@ const verifyError = () => {
   }
 
   if (counterErrors === 9) {
-    gameOver();
+    setTimeout(() => {
+      gameOver();
+    }, 700);
   }
 
   drawGallow();
@@ -99,7 +104,7 @@ const gameWin = () => {
   $game.prepend(h2);
   $gallow.style.display = "none";
   $wordGame.style.display = "none";
-  $cancellGameButton.style.display = "none";
+  $surrenderButton.style.display = "none";
 };
 
 const drawGallow = () => {
@@ -144,15 +149,15 @@ const drawGallow = () => {
 const gameOver = () => {
   let h2 = document.createElement("h2");
   h2.id = "game-over";
-  h2.innerText = `Perdiste el juego, la palabra era ${word}`;
+  h2.innerText = `Perdiste el juego, la palabra era "${word}"`;
 
   $game.prepend(h2);
   $gallow.style.display = "none";
   $wordGame.style.display = "none";
-  $cancellGameButton.style.display = "none";
+  $surrenderButton.style.display = "none";
 };
 
-const cancellGame = () => {
+const cancelGame = () => {
   $addWordGame.style.display = "none";
   $game.style.display = "none";
   $introGame.style.display = "flex";
@@ -163,7 +168,7 @@ const newGame = () => {
   setWord();
   $gallow.style.display = "flex";
   $wordGame.style.display = "flex";
-  $cancellGameButton.style.display = "block";
+  $surrenderButton.style.display = "block";
   $inputGame.focus();
 };
 
@@ -173,7 +178,7 @@ const surrender = () => {
   resetGame();
   $gallow.style.display = "flex";
   $wordGame.style.display = "flex";
-  $cancellGameButton.style.display = "block";
+  $surrenderButton.style.display = "block";
 };
 
 const resetGame = () => {
@@ -227,7 +232,6 @@ const addWord = () => {
 const startGameWord = () =>{
 
   word = $textInputWord.value.toUpperCase().trim()
-  console.log(word)
 
   if(word.length < 8 && word.length > 0){
     $addWordGame.style.display = "none";
@@ -249,6 +253,8 @@ $errorCharac.style.display = 'block'
 $newGameButton.onclick = newGame;
 $startGameButton.onclick = startGame;
 $addWordButton.onclick = addWord;
-$cancellGameButton.onclick = surrender;
+$surrenderButton.onclick = surrender;
+$cancelGameButton.onclick = cancelGame;
 $form.onsubmit = verifyLetter;
 $playGameWord.onclick = startGameWord;
+
