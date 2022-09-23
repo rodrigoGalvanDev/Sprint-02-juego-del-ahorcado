@@ -2,6 +2,9 @@ const $startGameButton = document.querySelector("#start-game");
 const $introGame = document.querySelector("#intro-game");
 const $addWordButton = document.querySelector("#add-word");
 const $addWordGame = document.querySelector("#add-word-game");
+const $playGameWord = document.querySelector('#play-game-word')
+const $textInputWord = document.querySelector('#textInput')
+const $errorCharac = document.querySelector('.error-charac')
 const $cancellGameButton = document.querySelector("#cancell-game");
 const $game = document.querySelector("#game");
 const $newGameButton = document.querySelector("#new-game");
@@ -14,7 +17,7 @@ const $wordGame = document.querySelector("#word-game");
 const $lines = document.querySelector(".lines");
 const $form = document.querySelector("form");
 
-const words = ["CASA", "PERRO", "GATO", 'NEGRO'];
+let words = ["CASA", "PERRO", "GATO", 'AUTO', 'ALURA', 'JAVA', 'ORACLE'];
 
 let word = words[Math.floor(Math.random() * words.length)];
 
@@ -221,8 +224,31 @@ const addWord = () => {
   $addWordGame.style.display = "block";
 };
 
+const startGameWord = () =>{
+
+  word = $textInputWord.value.toUpperCase().trim()
+  console.log(word)
+
+  if(word.length < 8 && word.length > 0){
+    $addWordGame.style.display = "none";
+    $errorCharac.style.display = 'none'
+    startGame()
+
+  } else{
+    errorMaxCharacters()
+  }
+
+}
+
+const errorMaxCharacters = () =>{
+
+$errorCharac.style.display = 'block'
+
+}
+
 $newGameButton.onclick = newGame;
 $startGameButton.onclick = startGame;
 $addWordButton.onclick = addWord;
 $cancellGameButton.onclick = surrender;
 $form.onsubmit = verifyLetter;
+$playGameWord.onclick = startGameWord;

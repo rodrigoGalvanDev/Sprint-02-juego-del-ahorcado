@@ -136,7 +136,7 @@ body{
         
 
     
-        #play-game{
+        #play-game-word{
             background-color: $primary-color;
             color: $secondary-color;
             border-radius: 20px;
@@ -148,7 +148,7 @@ body{
             transition: transform ease 300ms;
         }
         
-        #play-game:hover{
+        #play-game-word:hover{
             transform: translateY(-0.25em);
           }
     

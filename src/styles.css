@@ -114,7 +114,7 @@ body {
   align-items: center;
   margin-top: 10px;
 }
-#add-word-game .buttons-addword-game #play-game {
+#add-word-game .buttons-addword-game #play-game-word {
   background-color: #0A3871;
   color: #E9ECF8;
   border-radius: 20px;
@@ -125,7 +125,7 @@ body {
   margin-right: 10px;
   transition: transform ease 300ms;
 }
-#add-word-game .buttons-addword-game #play-game:hover {
+#add-word-game .buttons-addword-game #play-game-word:hover {
   transform: translateY(-0.25em);
 }
 #add-word-game .buttons-addword-game #cancell-game {
