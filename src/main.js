@@ -81,6 +81,9 @@ let counterErrors = 0;
 
 const verifyError = () => {
   if (counterErrors < 9) {
+    if (errorCharacters.includes($inputGame.value.toUpperCase()) === true) {
+      return;
+    }
     if (word.includes($inputGame.value.toUpperCase()) === false) {
       errorCharacters.push($inputGame.value.toUpperCase());
       $failLetters.innerHTML = errorCharacters.join("");
