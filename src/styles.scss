@@ -84,7 +84,7 @@ body{
 
         textarea{
             font-family: 'Inter', sans-serif;
-            font-size: 32px;
+            font-size: 38px;
             color: $primary-color;
             border: 0px;
             background-color: $secondary-color;
@@ -114,13 +114,13 @@ body{
 
         p{
             font-family: 'Inter', sans-serif;
-            font-size: 10px;
+            font-size: 15px;
             opacity: 0.7;
         }
     
         svg{
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
         }
 
     }
@@ -143,9 +143,10 @@ body{
             color: $secondary-color;
             border-radius: 20px;
             border: 1px solid $primary-color;
-            width: 250px;
-            height: 50px;
+            width: 280px;
+            height: 60px;
             font-family: 'Inter';
+            font-size: 16px;
             margin-right: 10px;
             transition: transform ease 300ms;
         }
@@ -159,8 +160,9 @@ body{
             color: $primary-color;
             border-radius: 20px;
             border: 1px solid $primary-color;
-            width: 250px;
-            height: 50px;
+            width: 280px;
+            height: 60px;
+            font-size: 16px;
             font-family: 'Inter';
             transition: transform ease 300ms;
         }
@@ -172,7 +174,7 @@ body{
     .error-charac{
         text-align: center;
         margin-top: 10px;
-        font-size: 15px;
+        font-size: 16px;
         color: red;
         font-family: 'Inter', sans-serif;
     }
@@ -223,9 +225,9 @@ body{
 
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-end;
             align-content: center;
-            margin-top: 20px;
+            margin-top: 60px;
 
             p{
                 margin-bottom: -10px;
@@ -248,7 +250,7 @@ body{
     }
 
     #buttons-game{
-        margin-top: 20px;
+        margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -261,9 +263,10 @@ body{
             color: $secondary-color;
             border-radius: 20px;
             border: 1px solid $primary-color;
-            width: 250px;
-            height: 50px;
+            width: 280px;
+            height: 60px;
             font-family: 'Inter';
+            font-size: 17px;
             margin-right: 10px;
             transition: transform ease 300ms;
         }
@@ -277,8 +280,9 @@ body{
             color: $primary-color;
             border-radius: 20px;
             border: 1px solid $primary-color;
-            width: 250px;
-            height: 50px;
+            width: 280px;
+            height: 60px;
+            font-size: 17px;
             font-family: 'Inter';
             transition: transform ease 300ms;
             
@@ -312,8 +316,9 @@ body{
 }
 
 .footer{
-    margin-top: 18rem;
+    margin-top: 18rem;  
     text-align: center;
+
     
     .credits{
 
@@ -330,7 +335,6 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: row;
-        border: 1px solid red;
 
 
 
@@ -339,7 +343,7 @@ body{
             text-decoration: none;
             color: $primary-color;
             font-size: 25px;
-            padding-right: 15px;
+            padding-right: 20px;
 
             svg{
                 width: 50px;

@@ -70,7 +70,7 @@ body {
 }
 #add-word-game .text-area-game textarea {
   font-family: "Inter", sans-serif;
-  font-size: 32px;
+  font-size: 38px;
   color: #0A3871;
   border: 0px;
   background-color: #E9ECF8;
@@ -100,12 +100,12 @@ body {
 }
 #add-word-game .adversory p {
   font-family: "Inter", sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   opacity: 0.7;
 }
 #add-word-game .adversory svg {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 }
 #add-word-game .buttons-addword-game {
   display: flex;
@@ -121,9 +121,10 @@ body {
   color: #E9ECF8;
   border-radius: 20px;
   border: 1px solid #0A3871;
-  width: 250px;
-  height: 50px;
+  width: 280px;
+  height: 60px;
   font-family: "Inter";
+  font-size: 16px;
   margin-right: 10px;
   transition: transform ease 300ms;
 }
@@ -135,8 +136,9 @@ body {
   color: #0A3871;
   border-radius: 20px;
   border: 1px solid #0A3871;
-  width: 250px;
-  height: 50px;
+  width: 280px;
+  height: 60px;
+  font-size: 16px;
   font-family: "Inter";
   transition: transform ease 300ms;
 }
@@ -146,7 +148,7 @@ body {
 #add-word-game .error-charac {
   text-align: center;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 16px;
   color: red;
   font-family: "Inter", sans-serif;
 }
@@ -186,9 +188,9 @@ body {
 #game #word-game .lines {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   align-content: center;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 #game #word-game .lines p {
   margin-bottom: -10px;
@@ -205,7 +207,7 @@ body {
   letter-spacing: 20px;
 }
 #game #buttons-game {
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -218,9 +220,10 @@ body {
   color: #E9ECF8;
   border-radius: 20px;
   border: 1px solid #0A3871;
-  width: 250px;
-  height: 50px;
+  width: 280px;
+  height: 60px;
   font-family: "Inter";
+  font-size: 17px;
   margin-right: 10px;
   transition: transform ease 300ms;
 }
@@ -232,8 +235,9 @@ body {
   color: #0A3871;
   border-radius: 20px;
   border: 1px solid #0A3871;
-  width: 250px;
-  height: 50px;
+  width: 280px;
+  height: 60px;
+  font-size: 17px;
   font-family: "Inter";
   transition: transform ease 300ms;
 }
@@ -273,14 +277,13 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  border: 1px solid red;
 }
 .footer .contact a {
   font-family: "Inter";
   text-decoration: none;
   color: #0A3871;
   font-size: 25px;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 .footer .contact a svg {
   width: 50px;

@@ -1,3 +1,4 @@
+
 const $startGameButton = document.querySelector("#start-game");
 const $introGame = document.querySelector("#intro-game");
 const $addWordButton = document.querySelector("#add-word");
@@ -17,6 +18,7 @@ const $gallow = document.querySelector("#gallow");
 const $wordGame = document.querySelector("#word-game");
 const $lines = document.querySelector(".lines");
 const $form = document.querySelector("form");
+const $footer = document.querySelector('.footer')
 
 let words = ["CASA", "PERRO", "GATO", 'AUTO', 'ALURA', 'JAVA', 'ORACLE'];
 
@@ -26,7 +28,7 @@ const startGame = () => {
   $introGame.style.display = "none";
   $game.style.display = "block";
   $inputGame.focus();
-
+  $footer.style.display = 'none'
   setWord();
 };
 
@@ -68,7 +70,7 @@ const verifyLetter = (e) => {
   if (counterAccert === word.length) {
     setTimeout(() => {
       gameWin();
-    }, 700);
+    }, 500);
   }
 
   verifyError();
@@ -89,7 +91,7 @@ const verifyError = () => {
   if (counterErrors === 9) {
     setTimeout(() => {
       gameOver();
-    }, 700);
+    }, 500);
   }
 
   drawGallow();
@@ -161,6 +163,7 @@ const cancelGame = () => {
   $addWordGame.style.display = "none";
   $game.style.display = "none";
   $introGame.style.display = "flex";
+  $footer.style.display = 'block'
 };
 
 const newGame = () => {
@@ -179,6 +182,7 @@ const surrender = () => {
   $gallow.style.display = "flex";
   $wordGame.style.display = "flex";
   $surrenderButton.style.display = "block";
+  $footer.style.display = 'block'
 };
 
 const resetGame = () => {
@@ -227,6 +231,7 @@ const resetGame = () => {
 const addWord = () => {
   $introGame.style.display = "none";
   $addWordGame.style.display = "block";
+  $footer.style.display = 'none'
 };
 
 const startGameWord = () =>{
