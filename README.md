@@ -10,7 +10,7 @@
 
 <h2>Acerca del proyecto</h3>
 
-<p>Primer Sprint de Oracle Next Education y Alura, se trata de un encriptador/desencriptador de texto, que funciona solo ingresando letras minusculas<p>
+<p>Segundo Sprint de Oracle Next Education y Alura, se trata del juego del ahorcado, con palabras ya preestablecidas y un modo de juego en donde uno puede ingresar su propia palabra para jugar<p>
 
  <h2>Dependencias</h3>
 
