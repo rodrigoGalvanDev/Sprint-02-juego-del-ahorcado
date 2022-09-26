@@ -12,9 +12,9 @@
 
 <p>Primer Sprint de Oracle Next Education y Alura, se trata de un encriptador/desencriptador de texto, que funciona solo ingresando letras minusculas<p>
 
- <h2>Tecnologias usadas</h3>
+ <h2>Dependencias</h3>
 
- Desarrollado con HTML, CSS (Sass) y JavaScript
+ HTML, CSS (Sass) y JavaScript
  
  <h2>Preview</h3>
  
