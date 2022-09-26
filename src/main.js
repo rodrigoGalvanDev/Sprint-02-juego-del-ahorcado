@@ -241,7 +241,7 @@ const startGameWord = () =>{
 
   word = $textInputWord.value.toUpperCase().trim()
 
-  if(word.length < 8 && word.length > 0){
+  if(word.length <= 8 && word.length > 0){
     $addWordGame.style.display = "none";
     $errorCharac.style.display = 'none'
     startGame()
