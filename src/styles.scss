@@ -137,7 +137,7 @@ body{
         margin-top: 10px;
         
 
-    
+        
         #play-game-word{
             background-color: $primary-color;
             color: $secondary-color;
@@ -319,7 +319,7 @@ body{
 }
 
 .footer{
-    margin-top: 18rem;  
+    margin-top: 17rem;  
     text-align: center;
 
     
@@ -353,5 +353,67 @@ body{
                 height: 50px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 940px) {
+    
+    .footer{
+        margin-top: 12.7rem; 
+    }
+
+    #game{
+        
+        #word-game{
+            .lines{
+                
+                #line{
+                    width: 40px;
+                }
+            }
+
+
+        }
+
+        #buttons-game{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            
+            #new-game{
+                width: 270px;
+                margin-right: 0px;
+                margin-bottom: 10px;
+            }
+            #surrender-game{
+                width: 270px;
+            }
+        }
+    }
+
+    #add-word-game{
+
+        .text-area-game{
+            
+            #textInput{
+                width: 350px;
+            }
+        }
+
+        .adversory{
+            margin-top: 150px;
+            margin-right: 120px;
+        }
+
+        .buttons-addword-game{
+            
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            #play-game-word{
+                margin-right: 0px;
+                margin-bottom: 10px;
+            }
+        }
+
     }
 }
