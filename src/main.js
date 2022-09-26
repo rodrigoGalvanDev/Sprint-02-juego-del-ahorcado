@@ -20,7 +20,7 @@ const $lines = document.querySelector(".lines");
 const $form = document.querySelector("form");
 const $footer = document.querySelector('.footer')
 
-let words = ["CASA", "PERRO", "GATO", 'AUTO', 'ALURA', 'JAVA', 'ORACLE'];
+let words = ["CASA", "PERRO", "GATO", 'MAGIA', 'ALURA', 'JAVA', 'ORACLE'];
 
 let word = words[Math.floor(Math.random() * words.length)];
 
